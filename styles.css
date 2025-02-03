@@ -1,30 +1,24 @@
-/*  your css code here. If applicable */
 /* Container styling */
 #container {
     margin: 20px;
-    padding: 20px;
-    background-color: #f4f4f4;
+    padding: 10px;
     font-size: 16px;
     color: #333;
-    position: relative; /* Required for pseudo-elements positioning */
+    display: inline-block; /* Ensure it remains inline */
 }
 
 /* Pseudo-element before the container */
 #container::before {
-    content: "Before Content - ";
+    content: "Before Element ";
     color: #f00;
     font-size: 20px;
-    position: absolute;
-    top: -30px; /* Position it above the container */
-    left: 20px; /* Align with the container's left edge */
+    font-weight: bold;
 }
 
 /* Pseudo-element after the container */
 #container::after {
-    content: " - After Content";
+    content: " After Element";
     color: #f00;
     font-size: 20px;
-    position: absolute;
-    bottom: -30px; /* Position it below the container */
-    right: 20px; /* Align with the container's right edge */
+    font-weight: bold;
 }
